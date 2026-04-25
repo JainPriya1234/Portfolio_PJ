@@ -100,7 +100,7 @@
       <section id="skills" class="section skills-section">
         <div class="section-title">
           <h2>Professional <span>Skillset</span></h2>
-          <p>Technologies I use to build, optimize, ship, and observe backend systems.</p>
+          <p>Technologies I use to build, optimize, deploy, and observe backend systems.</p>
         </div>
         <div class="skill-grid">
           <article>JavaScript</article>
@@ -130,13 +130,13 @@
           <article class="timeline-card">
             <div class="timeline-date">Oct 2024 - Present</div>
             <div>
-              <h3>Associate Software Engineer, Backend</h3>
+              <h3>Associate Software Engineer</h3>
               <p class="company">Accenture - Gurugram</p>
               <ul>
                 <li>Automated 70 happy-path and negative regression scenarios using SoapUI.</li>
                 <li>Implemented backend transaction routing logic based on update-status flag behavior.</li>
                 <li>Supported 2 production release cycles, including package creation, unit testing, release documentation, and defect resolution.</li>
-                <li>Improved Dynatrace dashboards and reduced telemetry fetch volume from 1.5 GB to 90 MB in test.</li>
+                <li>Improved Dynatrace dashboards and reduced telemetry fetch volume by 90% in test.</li>
               </ul>
             </div>
           </article>
@@ -144,7 +144,7 @@
             <div class="timeline-date">Jul 2023 - Jan 2024</div>
             <div>
               <h3>Backend Developer Intern</h3>
-              <p class="company">Sponskart - Remote</p>
+              <p class="company">Sponskart</p>
               <ul>
                 <li>Developed REST APIs using Node.js, NestJS, Express.js, and MongoDB.</li>
                 <li>Improved API performance by 30% through query optimization and Redis caching.</li>
@@ -159,7 +159,7 @@
       <section id="projects" class="section projects-section">
         <div class="section-title">
           <h2>My Recent <span>Works</span></h2>
-          <p>Backend-focused work that shows API design, caching, automation, and operational thinking.</p>
+          <p>Work that shows API design, caching, automation, and operational thinking.</p>
         </div>
         <div class="project-grid">
           <article class="project-card">
@@ -183,7 +183,7 @@
           </article>
           <article class="project-card">
             <div class="project-image automation-visual">
-              <span>70 Tests</span>
+              <span>Automated 70 Tests</span>
             </div>
             <div class="project-body">
               <h3>Regression Automation</h3>
@@ -201,13 +201,13 @@
           </article>
           <article class="project-card">
             <div class="project-image telemetry-visual">
-              <span>1.5GB -> 90MB</span>
+              <span>Dynatrace</span>
             </div>
             <div class="project-body">
               <h3>Observability Optimization</h3>
               <p>
                 Improved Dynatrace dashboard usability and optimized telemetry collection in test,
-                reducing fetched data volume while keeping relevant service signals visible.
+                reducing fetched data volume by 90%  while keeping relevant service signals visible .
               </p>
               <div class="tag-row">
                 <span>Dynatrace</span>
@@ -222,34 +222,127 @@
 
       <section id="resume" class="section resume-section">
         <div class="resume-card">
-          <p class="section-kicker">Resume</p>
-          <h2>Download my latest backend engineer resume.</h2>
-          <p>
-            The PDF includes my experience, skills, education, achievements, and project impact
-            in a format suitable for job applications.
-          </p>
-          <a class="button primary" href="assets/Priya_Jain_resume.pdf" target="_blank" rel="noreferrer">Open Resume</a>
+          <p class="section-kicker"></p>
+          <div class="resume-actions">
+            <button class="button primary resume-toggle" type="button" aria-expanded="false" aria-controls="resume-viewer">
+              Open Resume
+            </button>
+            <a class="button secondary" href="https://drive.google.com/file/d/1DVaSrcyFABz1sMXuCZ1f8n4Wq7ILx62e/view?usp=sharing" target="_blank" rel="noreferrer">Open in New Tab</a>
+          </div>
+          <div class="resume-shutter" id="resume-viewer" aria-hidden="true">
+            <div class="resume-teaser" aria-hidden="true">
+              <div class="resume-character">
+                <span class="character-eye"></span>
+                <span class="character-eye"></span>
+                <span class="character-smile"></span>
+              </div>
+              <div class="speech-bubble">CheckOut My Resume</div>
+            </div>
+            <iframe
+              src="https://drive.google.com/file/d/1DVaSrcyFABz1sMXuCZ1f8n4Wq7ILx62e/preview"
+              title="Priya Jain resume preview"
+              loading="lazy"
+              allow="autoplay"
+            ></iframe>
+          </div>
         </div>
       </section>
 
       <section id="contact" class="section contact-section">
         <div class="section-title">
           <h2>FIND ME ON</h2>
-          <p>Feel free to connect for backend engineering opportunities.</p>
+          <p>Feel free to connect for Software engineering opportunities.</p>
         </div>
         <div class="social-row">
-          <a href="mailto:priya.jain11302@gmail.com" aria-label="Email Priya Jain">Email</a>
-          <a href="tel:+916395230299" aria-label="Call Priya Jain">Phone</a>
+          <button class="contact-copy-trigger" type="button" data-contact-label="Email" data-contact-value="priya.jain11302@gmail.com" aria-label="Copy Priya Jain email">Email</button>
+          <button class="contact-copy-trigger" type="button" data-contact-label="Phone" data-contact-value="+916395230299" aria-label="Copy Priya Jain phone number">Phone</button>
           <a href="https://linkedin.com/in/priya-jain1103" target="_blank" rel="noreferrer" aria-label="Priya Jain LinkedIn">LinkedIn</a>
-          <a href="assets/Priya_Jain_resume.pdf" target="_blank" rel="noreferrer" aria-label="Priya Jain resume">Resume</a>
+          <a href="https://drive.google.com/file/d/1DVaSrcyFABz1sMXuCZ1f8n4Wq7ILx62e/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Priya Jain resume">Resume</a>
         </div>
       </section>
     </main>
 
     <footer>
       <span>Designed and built by Priya Jain</span>
-      <span>2026</span>
+      <span id="current-year"></span>
     </footer>
   </div>
+  <div class="copy-modal" id="copy-modal" aria-hidden="true">
+    <div class="copy-dialog" role="dialog" aria-modal="true" aria-labelledby="copy-title">
+      <button class="copy-close" type="button" aria-label="Close copy popup">x</button>
+      <p class="section-kicker" id="copy-type">Contact</p>
+      <h2 id="copy-title">Copy Contact</h2>
+      <div class="copy-value" id="copy-value"></div>
+      <button class="button primary copy-button" type="button">Copy</button>
+      <p class="copy-status" aria-live="polite"></p>
+    </div>
+  </div>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    const resumeToggle = document.querySelector(".resume-toggle");
+    const resumeViewer = document.getElementById("resume-viewer");
+
+    resumeToggle.addEventListener("click", () => {
+      const isOpen = resumeToggle.getAttribute("aria-expanded") === "true";
+
+      resumeToggle.setAttribute("aria-expanded", String(!isOpen));
+      resumeViewer.setAttribute("aria-hidden", String(isOpen));
+      resumeToggle.textContent = isOpen ? "Open Resume" : "Close Resume";
+    });
+
+    const copyModal = document.getElementById("copy-modal");
+    const copyType = document.getElementById("copy-type");
+    const copyTitle = document.getElementById("copy-title");
+    const copyValue = document.getElementById("copy-value");
+    const copyButton = document.querySelector(".copy-button");
+    const copyStatus = document.querySelector(".copy-status");
+    const copyClose = document.querySelector(".copy-close");
+    let activeContactValue = "";
+
+    function openCopyModal(label, value) {
+      activeContactValue = value;
+      copyType.textContent = label;
+      copyTitle.textContent = label === "Phone" ? "Copy Phone No." : `Copy ${label}`;
+      copyValue.textContent = value;
+      copyStatus.textContent = "";
+      copyModal.setAttribute("aria-hidden", "false");
+      copyButton.focus();
+    }
+
+    function closeCopyModal() {
+      copyModal.setAttribute("aria-hidden", "true");
+    }
+
+    async function copyContactValue() {
+      try {
+        await navigator.clipboard.writeText(activeContactValue);
+      } catch {
+        const textArea = document.createElement("textarea");
+        textArea.value = activeContactValue;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        textArea.remove();
+      }
+
+      copyStatus.textContent = "Copied!";
+    }
+
+    document.querySelectorAll(".contact-copy-trigger").forEach(button => {
+      button.addEventListener("click", () => {
+        openCopyModal(button.dataset.contactLabel, button.dataset.contactValue);
+      });
+    });
+
+    copyButton.addEventListener("click", copyContactValue);
+    copyClose.addEventListener("click", closeCopyModal);
+    copyModal.addEventListener("click", event => {
+      if (event.target === copyModal) closeCopyModal();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeCopyModal();
+    });
+  </script>
 </body>
 </html>
