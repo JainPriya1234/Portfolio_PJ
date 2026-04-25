@@ -23,6 +23,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--text);
   background:
     radial-gradient(circle at 15% 10%, rgba(157, 78, 221, 0.28), transparent 32rem),
@@ -700,6 +701,7 @@ li + li {
 .contact-copy-trigger {
   display: grid;
   min-width: 112px;
+  max-width: 100%;
   min-height: 48px;
   place-items: center;
   border: 1px solid rgba(199, 112, 240, 0.42);
@@ -709,6 +711,7 @@ li + li {
   cursor: pointer;
   font: inherit;
   font-weight: 850;
+  text-align: center;
 }
 
 .social-row a:hover,
@@ -890,7 +893,9 @@ footer {
 
   .hero-actions,
   .button,
-  .resume-actions {
+  .resume-actions,
+  .social-row a,
+  .contact-copy-trigger {
     width: 100%;
   }
 
